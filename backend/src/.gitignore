@@ -1,0 +1,38 @@
+# Bỏ qua file application.properties
+src/main/resources/application.properties
+
+# Bỏ qua các file .properties khác (tùy chọn, nếu cần)
+src/main/resources/*.properties
+
+# Bỏ qua các file/thư mục build của Maven/Gradle
+target/
+build/
+*.jar
+*.war
+*.ear
+
+# Bỏ qua các file biên dịch
+*.class
+
+# Bỏ qua log files
+*.log
+
+# Bỏ qua các file IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# Bỏ qua thư mục dependency
+.m2/
+.gradle/
+
+# Bỏ qua file môi trường
+.env
+
+# Bỏ qua file tạm
+*.swp
+*.swo
+*~
