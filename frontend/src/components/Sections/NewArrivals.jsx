@@ -3,7 +3,7 @@ import SectionHeading from './SectionsHeading/SectionHeading'
 import Card from '../Card/Card';
 import Jeans from '../../assets/img/jeans.jpg'
 import Shirts from '../../assets/img/shirts.jpg'
-import Tshirt from '../../assets/img/tshirts.jpeg'
+import Tshirt from '../../assets/img/T-shirts.png'
 import dresses from '../../assets/img/dresses.jpg'
 import Carousel from 'react-multi-carousel';
 import { responsive } from '../../utils/Section.constants';
@@ -27,7 +27,7 @@ const items = [{
     imagePath:require('../../assets/img/joggers.jpg')
 },
 {
-    'title':'Kurtis',
+    'title':'Jackets',
     imagePath:require('../../assets/img/kurtis.jpg')
 }];
 

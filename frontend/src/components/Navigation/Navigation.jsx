@@ -6,6 +6,7 @@ import { Link, NavLink, useNavigate } from 'react-router-dom'
 import './Navigation.css';
 import { useSelector } from 'react-redux'
 import { countCartItems } from '../../store/features/cart'
+import logo from '../../assets/img/logo.png'
 
 const Navigation = ({variant="default"}) => {
   const cartLength = useSelector(countCartItems);
@@ -13,9 +14,11 @@ const Navigation = ({variant="default"}) => {
 
   return (
     <nav className='flex items-center py-6 px-16 justify-between gap-20 custom-nav'>
-      <div className='flex items-center gap-6'>
+      <div className='flex items-center gap-4'>
         {/* Logo */}
-        <a className='text-3xl text-black font-bold gap-8' href='/'>ShopEase</a>
+        <Link to='/'>
+          <img src={logo} alt="logo" className='w-20 h-20'/>
+        </Link>
       </div>
       { variant ==="default" &&
       <div className='flex flex-wrap items-center gap-10'>
